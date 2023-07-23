@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchfortraveldate</title>
+    <link rel="stylesheet" href="search_container.css">
+    <link rel="stylesheet" href="search_controls.css">
+    <link rel="stylesheet" href="search_controls_common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="nav">導覽列</div>
+    <div class="main">
+
+        <div class="left_side">
+            <div class="left_side_block">
+                <label>篩選目的地</label>
+                <div class="display_row_controls search_container">
+                    <img class="icon_search" src="icon\search.png">
+                    <input type="text" placeholder="搜尋目的地">
+                </div>
+                <div class="category display_column_controls">
+                    <div class="display_row_controls" id="region_click">
+                        <label class="lblCategory">台灣</label>
+                        <div class="div_img_center">
+                            <img src="icon/arrow_bottom_down_icon.png">
+                        </div>
+                    </div>
+                    <ul class="tags" id="city">
+                    </ul>
+                </div>
+            </div>
+            <div class="left_side_block">
+                <label>所有商品類別</label>
+                <div class="category display_column_controls" id="product_category">
+                </div>
+            </div>
+            <div class="left_side_block">
+                <label id="selected_date">篩選日期</label>
+            </div>
+            <div class="left_side_block">
+                <label>價錢(TWD)</lab>
+            </div>
+            <div class="left_side_block">
+                <label>商品類型</lab>
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="right_selected_result">
+                <div class="padding">
+                    <span>504</span><span>項體驗行程</span>
+                </div>
+                <div class="padding">
+                    <span>排序 : </span><span>| 熱門程度</span><span>| 用戶評價</span><span>| 價格排序(低到高)</span>
+                </div>
+            </div>
+            <div class="right_selected_result">
+                <div class="right_product padding">
+                    商品1
+                </div>
+                <div class="right_product padding">
+                    商品2
+                </div>
+                <div class="right_product padding">
+                    商品3
+                </div>
+                <div class="right_product padding">
+                    商品4
+                </div>
+                <div class="right_product padding">
+                    商品5
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">聯絡我們等資訊</div>
+    <script src="search_dropdown_list.js"></script>
+    <script src="search_jq.js"></script>
+</body>
+
+</html>

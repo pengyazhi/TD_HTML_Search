@@ -1,0 +1,14 @@
+.display_row_controls{
+    display: flex;
+    flex-direction: row; 
+   
+}
+.display_column_controls{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_img_center{
+   padding-top: 4px;
+   
+}

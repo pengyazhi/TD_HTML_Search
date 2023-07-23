@@ -1,0 +1,43 @@
+
+.search_container{
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+    align-items: center;
+    border: 1px #D0D0D0 solid;
+    border-radius: 5px;
+}
+.icon_search{
+    width: 24px;
+    height: 24px;
+}
+input{
+    border:none;
+    outline: none;
+    width: 100%;
+}
+.category{
+   
+    align-items:stretch;
+    padding-bottom: 10px;
+}
+.tags
+{
+    padding: 5px 0 5px 0;
+    list-style: none;
+}
+li
+{
+    margin-left: 30px;
+}
+#region_click,.category_click
+{
+    padding-left: 15px;
+    width: auto;
+}
+li>input{
+    width:auto;
+    margin-right: 5px;
+}
+.lblCategory{
+    width:80%;
+}

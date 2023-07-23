@@ -1,0 +1,69 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+span,label{
+    padding: 5px;
+    text-align: center;
+}
+label{
+    display: block;
+    text-align: start;
+}   
+.nav,.footer
+{
+   width: 100%;
+    border: 1px black solid;
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.main{
+    
+    border: 1px black solid;
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row; /* 將兩側水平排列 */
+    align-items: flex-start; /* 將兩側對齊到容器頂部 */
+
+}
+
+.left_side{
+    display: inline-block;
+    border: 1px black solid;
+    margin: 20px;
+    width:30%;
+}
+.left_side_block{
+    display: block;
+    border: 1px black solid;
+    margin: 20px 0 20px 0;
+    
+}
+
+.right_side{
+    display: inline-block;
+    border: 1px black solid;
+    width:60%;
+    margin: 20px;
+}
+.right_product{
+    
+    border: 1px black solid;
+    
+}
+.right_selected_result{
+    margin: 20px;
+    
+}
+.padding{
+    padding: 10px 10px 10px 0;
+}
