@@ -90,3 +90,15 @@ for (let i = 0; i < categories.length; i++) {
       `;
   }
 product_category.innerHTML=display_categories;
+
+const product_type = document.getElementById('product_type');
+const product_type_list = ['門票','自助行程','旅行團'];
+let display_product_type='';
+for(let i = 0; i<product_type_list.length;i++){
+  display_product_type+=`<li class="tags display_row_controls"><input type="checkbox">${product_type_list[i]}</li>`;
+}
+product_type.innerHTML = display_product_type;
+
+
+
+  

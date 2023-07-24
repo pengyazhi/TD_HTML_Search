@@ -12,3 +12,10 @@
    padding-top: 4px;
    
 }
+.div_span_center{
+    display: inline-flex;
+    width: 60%;
+    justify-content: space-around; /* 水平置中並增加間距 */
+    align-items: center; /* 垂直置中 */
+    
+}
