@@ -27,17 +27,20 @@ input{
 }
 li
 {
-    margin-left: 30px;
+    margin-left: 10px;
 }
-#region_click,.category_click
+.category_click
 {
     padding-left: 15px;
     width: auto;
 }
-li>input{
-    width:auto;
-    margin-right: 5px;
-}
+
 .lblCategory{
     width:80%;
+    font-size: 18px;
+}
+.drop_down_list_title{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
 }

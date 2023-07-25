@@ -3,20 +3,15 @@ const citys = ['臺北市','新北市','桃園市','臺中市','臺南市','高�
 
 let display_citys='';
 for(let i = 0; i<citys.length;i++){
-    display_citys+=`<li class="tags display_row_controls"><input type="checkbox">${citys[i]}</li>`;
+    display_citys+=`<div class="div_underline"><li class="tags display_row_controls">
+                      <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
+                      <img id="checkbox"class="checkbox" src="icon/checkbox.png">
+                      <span>${citys[i]}</span>
+                    </li></div>`;
 }
 city.innerHTML = display_citys;
 
-/*<div class="category display_column_controls" id="product_category">
-    <div class="display_row_controls" id="category_click">
-        <label class="lblCategory" >商品類別</label>
-        <div class="div_img_center">
-            <img src="icon/arrow_bottom_down_icon.png">
-        </div>
-   </div>
-   <ul class="tags" id="product_tag">
-   </ul>
-</div>*/
+
 const product_category = document.getElementById('product_category');
 const categories=['景點門票','活動 & 展覽','戶外活動','舒壓 & 放鬆','工作坊 & 在地文化','觀光行程','住宿']
 const product_tag = document.getElementById('product_tag');
@@ -30,22 +25,7 @@ const tags_for_id_7 = ['飯店','渡假村','民宿'];
 
 let display_categories = '';
 let display_tags='';
-/*for(let i = 0; i < categories.length; i++){
-    let tags_li = tags_for_id_[i];
-    display_categories+=
-    `<div class="display_row_controls" id="category_click">
-        <label class="lblCategory" >${categories[i]}</label>
-        <div class="div_img_center">
-            <img src="icon/arrow_bottom_down_icon.png">
-        </div>
-    </div>`
-    for(let j =0; j<tags_li.length;j++){
-        display_tags+=
-        `<ul class="tags" id="product_tag">
-        </ul>`;
-    }
-    
-}*/
+
 for (let i = 0; i < categories.length; i++) {
     let tags_li = [];
     switch (i) {
@@ -74,19 +54,26 @@ for (let i = 0; i < categories.length; i++) {
   
     let tags_html = '';
     for (let j = 0; j < tags_li.length; j++) {
-      tags_html += `<li class="tags display_row_controls"><input type="checkbox">${tags_li[j]}</li>`;
+      tags_html += `<div class="div_underline"><li class="tags display_row_controls">
+                      <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
+                      <img id="checkbox"class="checkbox" src="icon/checkbox.png">
+                      <span>${tags_li[j]}</span>
+                    </li></div>`;
     }
   
     display_categories +=
       `<div class="display_row_controls category_click">
           <label class="lblCategory">${categories[i]}</label>
-          <div class="div_img_center">
-              <img src="icon/arrow_bottom_down_icon.png">
-            </div>
-        </div>
+          <div class="div_arrow_img_center">
+            <img id="arrow_bottom_down" src="icon/arrow_bottom_down_icon.png">
+            <img id="arrow_top_up" src="icon/arrow_top_up_icon.png">
+          </div>
+      </div>
+      <div class="drop_down_list_center">
         <ul class="tags" id="product_tag">
             ${tags_html}
         </ul>
+      </div>
       `;
   }
 product_category.innerHTML=display_categories;

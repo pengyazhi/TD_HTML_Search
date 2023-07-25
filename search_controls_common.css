@@ -8,7 +8,24 @@
     flex-direction: column;
 }
 
-.div_img_center{
+.div_arrow_img_center{
    padding-top: 4px;
    
+}
+#arrow_bottom_down,
+.checkbox{
+   display: none;
+}
+.checkbox,.uncheckbox{
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.div_underline{
+    border-radius: 0;
+    border-bottom:2px solid #dee1d9;
+}
+.drop_down_list_center{
+    margin: 0 20px 0 20px;
 }

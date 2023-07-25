@@ -1,10 +1,23 @@
-$("#region_click").on('click', function () {
-    $("#city").slideToggle()
+
+
+$(".category_click").on('click', function () {
+    const $arrowBottomDown = $(this).find("#arrow_bottom_down");
+    const $arrowTopUp = $(this).find("#arrow_top_up");
+    $(this).next(".drop_down_list_center").slideToggle(); //.drop_down_list_center 是下一個同級元素
+    $arrowBottomDown.toggle();
+    $arrowTopUp.toggle();
 });
 
 
 
-$(".category_click").on('click', function () {
-    $(this).next("#product_tag").slideToggle(); //#product_tag 是下一個同級元素
+
+$('.uncheckbox').on('click',function(){
+    $(this).hide();
+    $(this).next(".checkbox").show();
+    
+});
+$('.checkbox').on('click',function(){
+    $(this).hide();
+    $(this).prev(".uncheckbox").show();
 });
 
