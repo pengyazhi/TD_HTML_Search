@@ -3,11 +3,13 @@ const citys = ['臺北市','新北市','桃園市','臺中市','臺南市','高�
 
 let display_citys='';
 for(let i = 0; i<citys.length;i++){
-    display_citys+=`<div class="div_underline"><li class="tags display_row_controls">
-                      <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
-                      <img id="checkbox"class="checkbox" src="icon/checkbox.png">
-                      <span>${citys[i]}</span>
-                    </li></div>`;
+    display_citys+=`<div class="div_underline">
+                      <li class="tags display_row_controls">
+                        <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
+                        <img id="checkbox"class="checkbox" src="icon/checkbox.png">
+                        <span>${citys[i]}</span>
+                      </li>
+                    </div>`;
 }
 city.innerHTML = display_citys;
 
