@@ -9,46 +9,47 @@
     <link rel="stylesheet" href="search_controls.css">
     <link rel="stylesheet" href="search_controls_common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
     <div class="nav">導覽列</div>
     <div class="main">
-
         <div class="left_side">
             <div class="left_side_block">
-                <label>篩選目的地</label>
+                <label class="drop_down_list_title">篩選目的地</label>
                 <div class="display_row_controls search_container">
                     <img class="icon_search" src="icon\search.png">
                     <input type="text" placeholder="搜尋目的地">
                 </div>
                 <div class="category display_column_controls">
-                    <div class="display_row_controls" id="region_click">
+                    <div class="display_row_controls category_click">
                         <label class="lblCategory">台灣</label>
-                        <div class="div_img_center">
-                            <img src="icon/arrow_bottom_down_icon.png">
+                        <div class="div_arrow_img_center">
+                            <img id="arrow_bottom_down" src="icon/arrow_bottom_down_icon.png">
+                            <img id="arrow_top_up" src="icon/arrow_top_up_icon.png">
                         </div>
                     </div>
-                    <ul class="tags" id="city">
-                    </ul>
+                    <div class="drop_down_list_center">
+                        <ul class="tags" id="city">
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="left_side_block">
-                <label>所有商品類別</label>
+                <label class="drop_down_list_title">所有商品類別</label>
                 <div class="category display_column_controls" id="product_category">
                 </div>
             </div>
             <div class="left_side_block">
-                <label id="selected_date">篩選日期</label>
+                <label class="drop_down_list_title" id="selected_date">篩選日期</label>
             </div>
             <div class="left_side_block">
-                <label>價錢(TWD)</label>
+                <label class="drop_down_list_title">價錢(TWD)</lab>
             </div>
             <div class="left_side_block">
-                <label>商品類型</label>
-                <ul class="tags" id="product_type">
-                </ul>
+                <label class="drop_down_list_title">商品類型</lab>
             </div>
         </div>
         <div class="right_side">
@@ -86,7 +87,7 @@
 
     </div>
     <div class="footer">聯絡我們等資訊</div>
-    <script src="search_dropdown_list.js"></script>
+    <script src="search_drop_down_list.js"></script>
     <script src="search_jq.js"></script>
 </body>
 
