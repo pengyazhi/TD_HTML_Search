@@ -3,8 +3,8 @@ const citys = ['臺北市','新北市','桃園市','臺中市','臺南市','高�
 
 let display_citys='';
 for(let i = 0; i<citys.length;i++){
-    display_citys+=`<div class="div_underline">
-                      <li class="tags display_row_controls">
+    display_citys+=`<div class="divide-line">
+                      <li class="tags t-s controls-display-row">
                         <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
                         <img id="checkbox"class="checkbox" src="icon/checkbox.png">
                         <span>${citys[i]}</span>
@@ -56,7 +56,7 @@ for (let i = 0; i < categories.length; i++) {
   
     let tags_html = '';
     for (let j = 0; j < tags_li.length; j++) {
-      tags_html += `<div class="div_underline"><li class="tags display_row_controls">
+      tags_html += `<div class="divide-line"><li class="tags t-s controls-display-row">
                       <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
                       <img id="checkbox"class="checkbox" src="icon/checkbox.png">
                       <span>${tags_li[j]}</span>
@@ -64,15 +64,15 @@ for (let i = 0; i < categories.length; i++) {
     }
   
     display_categories +=
-      `<div class="display_row_controls category_click">
-          <label class="lblCategory">${categories[i]}</label>
-          <div class="div_arrow_img_center">
+      `<div class="controls-display-row category-click">
+          <label class="t-m lblCategory">${categories[i]}</label>
+          <div class="arrow_img_center">
             <img id="arrow_bottom_down" src="icon/arrow_bottom_down_icon.png">
             <img id="arrow_top_up" src="icon/arrow_top_up_icon.png">
           </div>
       </div>
-      <div class="drop_down_list_center">
-        <ul class="tags" id="product_tag">
+      <div class="filter-block-center">
+        <ul class="tags t-s" id="product_tag">
             ${tags_html}
         </ul>
       </div>
@@ -85,8 +85,8 @@ const product_type_list = ['門票','自助行程','旅行團'];
 let display_product_type='';
 for(let i = 0; i<product_type_list.length;i++){
   display_product_type+=
-  `<div class="div_underline">
-    <li class="tags display_row_controls">
+  `<div class="divide-line">
+    <li class="tags t-s controls-display-row">
       <img id="uncheckbox"class="uncheckbox" src="icon/uncheckbox.png">
       <img id="checkbox"class="checkbox" src="icon/checkbox.png">
       <span>${product_type_list[i]}</span>

@@ -5,92 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>searchfortraveldate</title>
-    <link rel="stylesheet" href="search_container.css">
-    <link rel="stylesheet" href="search_controls.css">
-    <link rel="stylesheet" href="search_controls_common.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="search_container.css">
+    <link rel="stylesheet" href="search_controls.css">
+    <link rel="stylesheet" href="search_common.css">
 </head>
 
 <body>
-    <div class="nav">導覽列</div>
+    <div class="header">導覽列</div>
     <div class="main">
-        <div class="left_side">
-            <div class="left_side_block">
-                <label class="drop_down_list_title">篩選目的地</label>
-                <div class="display_row_controls search_container">
+        <div class="col-3 filter-group">
+            <div class="filter_block">
+                <label class="t-l filter-title">篩選目的地</label>
+                <div class="controls-display-row search_container">
                     <img class="icon_search" src="icon\search.png">
                     <input type="text" placeholder="搜尋目的地">
                 </div>
-                <div class="category display_column_controls">
-                    <div class="display_row_controls category_click">
-                        <label class="lblCategory">台灣</label>
-                        <div class="div_arrow_img_center">
+                <div class="controls-display-column">
+                    <div class="controls-display-row category-click">
+                        <label class="t-m lblCategory" >台灣</label>
+                        <div class="arrow_img_center">
                             <img id="arrow_bottom_down" src="icon/arrow_bottom_down_icon.png">
                             <img id="arrow_top_up" src="icon/arrow_top_up_icon.png">
                         </div>
                     </div>
-                    <div class="drop_down_list_center">
+                    <div class="filter-block-center">
                         <ul class="tags" id="city">
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="left_side_block">
-                <label class="drop_down_list_title">所有商品類別</label>
-                <div class="category display_column_controls" id="product_category">
+            <div class="filter_block">
+                <label class="t-l filter-title">所有商品類別</label>
+                <div class="controls-display-column" id="product_category">
                 </div>
             </div>
-            <div class="left_side_block">
-                <label class="drop_down_list_title" id="selected_date">篩選日期</label>
+            <div class="filter_block">
+                <label class="t-l filter-title" id="selected_date">篩選日期</label>
             </div>
-            <div class="left_side_block">
-                <label class="drop_down_list_title">價錢(TWD)</label>
+            <div class="filter_block">
+                <label class="t-l filter-title">價錢(TWD)</label>
             </div>
-            <div class="left_side_block">
-                <label class="drop_down_list_title">商品類型</label>
-                <div class="category display_column_controls" id="product_category">
-                    <div class="drop_down_list_center">
-                        <ul  class="tags" id="product_type">
+            <div class="filter_block">
+                <label class="t-l filter-title">商品類型</label>
+                <div class="controls-display-column" id="product_category">
+                    <div class="filter-block-center">
+                        <ul class="tags" id="product_type">
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="right_side">
-            <div class="right_selected_result">
-                <div class="padding">
-                    <span>504</span><span>項體驗行程</span>
+        <div class="col-9 result-group">
+            <div class="result_block">
+                <div class="selected-result">
+                    <div class="selected-count divide-line">
+                        <span class="t-m font-weight">504</span><span class="t-s">項體驗行程</span>
+                    </div>
+                    <div class="sort text_secondary">
+                        <span class="t-m font-weight text_primary">排序 : </span>
+                        <span class="t-s">| 
+                            <a class="sort-a text_secondary font-weight">熱門程度</a>
+                        </span>
+                        <span class="t-s">| 
+                            <a class="sort-a text_secondary font-weight">用戶評價</a>
+                        </span>
+                        <span class="t-s">| 
+                            <a class="sort-a text_secondary font-weight">價格排序(低到高)</a>
+                        </span>
+                    </div>
                 </div>
-                <div class="padding">
-                    <span>排序 : </span>
-                    <div class="div_span_center">
-                        <span>| 熱門程度</span><span>| 用戶評價</span><span>| 價格排序(低到高)</span>
+                <div>
+                    <div class="product-card">
+                        商品1
+                    </div>
+                    <div class="product-card">
+                        商品2
+                    </div>
+                    <div class="product-card">
+                        商品3
+                    </div>
+                    <div class="product-card">
+                        商品4
+                    </div>
+                    <div class="product-card">
+                        商品5
                     </div>
 
                 </div>
             </div>
-            <div class="right_selected_result">
-                <div class="right_product padding">
-                    商品1
-                </div>
-                <div class="right_product padding">
-                    商品2
-                </div>
-                <div class="right_product padding">
-                    商品3
-                </div>
-                <div class="right_product padding">
-                    商品4
-                </div>
-                <div class="right_product padding">
-                    商品5
-                </div>
-
-            </div>
         </div>
-
     </div>
     <div class="footer">聯絡我們等資訊</div>
     <script src="search_drop_down_list.js"></script>

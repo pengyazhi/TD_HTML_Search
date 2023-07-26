@@ -1,9 +1,9 @@
 
 
-$(".category_click").on('click', function () {
+$(".category-click").on('click', function () {
     const $arrowBottomDown = $(this).find("#arrow_bottom_down");
     const $arrowTopUp = $(this).find("#arrow_top_up");
-    $(this).next(".drop_down_list_center").slideToggle(); //.drop_down_list_center 是下一個同級元素
+    $(this).next(".filter-block-center").slideToggle(); //.drop_down_list_center 是下一個同級元素
     $arrowBottomDown.toggle();
     $arrowTopUp.toggle();
 });
